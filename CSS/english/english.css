@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    height: 100%;
+}
+
+html {
+    background: rgba(8,255,200,1);
+}
+
+body {
+    border-radius: 30px;
+    border: solid 1px rgba(218,218,218,1);
+    box-shadow: 0px 0px 10px 3px rgba(133, 113, 113, 0.733);
+    background: rgba(255,247,247,1);
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+header {
+    display: grid;
+    grid-template:
+        "number no"
+        "number ok"
+    /   auto    1fr
+    ;
+}
+
+div.box {
+    width: 1000px;
+    margin: 30px auto;
+}
+
+div.num {
+    grid-area: number;
+}
+
+div.num {
+    background: blue;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+p#number {
+    display: inline-block;
+    color: white;
+    font-size: 10px;
+    line-height: 80px;
+}
+
+p#number > span {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+div.ok {
+    grid-area: ok;
+    text-align: center;
+}
+
+div.No {
+    grid-area: no;
+    text-align: center;
+}
+
+main {
+    margin-top: 100px;
+    width: 100%;
+}
+
+main > p {
+    font-size: 30px;
+    height: 100px;
+}
+
+main > input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 20px;
+}
